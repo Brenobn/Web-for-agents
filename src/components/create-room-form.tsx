@@ -44,7 +44,7 @@ export function CreateRoomForm() {
   })
 
   async function handleCreateRoom({ name, description }: CreateRoomFormData) {
-    // biome-ignore lint/suspicious/noConsole: Just in prod
+    // biome-ignore lint/suspicious/noConsole: Just in dev
     console.log("Formulário enviado com os dados:", { name, description })
 
     await createRoom({ name, description })
